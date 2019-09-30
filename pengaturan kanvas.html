@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title></title>
+</head>
+<style type="text/css">
+    canvas {
+        background-color: #ccc;
+    }
+</style>
+<body>
+    <canvas width="800" height="450" id="canvas"></canvas>
+
+    <script type="text/javascript">
+        var c=document.getElementById('canvas');
+        var ctx=c.getContext('2d');
+        var width = 125;
+        var height = 105;
+        var padding = 20;
+
+
+        //lingkaran 1
+        ctx.beginPath();
+        ctx.arc(350, 200, 80, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.linWidth = 10;
+        ctx.strokeStyle = "blue"; 
+        ctx.fill();
+        ctx.stroke();
+
+        //lingkaran 1
+        ctx.beginPath();
+        ctx.arc(350, 200, 60, 0, 2 * Math.PI);
+        ctx.fillStyle = "white";
+        ctx.linWidth = 10;
+        ctx.strokeStyle = "blue"; 
+        ctx.fill();
+        ctx.stroke();
+
+        //segi empat
+        ctx.beginPath();
+        ctx.rect(305,160,85,85);
+        ctx.fillStyle = "green";
+        ctx.fill();
+
+        //garis
+        //ctx.beginPath();
+        //ctx.moveTo(800,450);
+        //ctx.lineTo(200,300);
+        //ctx.lineTo(200,300);
+        //ctx.lineTo(200,300);
+        //ctx.lineTo(200,300);
+        //ctx.stroke();
+        
+    </script>
+    <br>
+
+    <a href="halaman Awal.html">kembali</a>
+</body>
+</html>
