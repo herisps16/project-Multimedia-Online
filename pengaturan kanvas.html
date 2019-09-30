@@ -18,38 +18,45 @@
         var padding = 20;
 
 
-        //lingkaran 1
-        ctx.beginPath();
-        ctx.arc(350, 200, 80, 0, 2 * Math.PI);
-        ctx.fillStyle = "red";
-        ctx.linWidth = 10;
-        ctx.strokeStyle = "blue"; 
-        ctx.fill();
-        ctx.stroke();
+         //lingkaran
+	    ctx.beginPath();
+	    ctx.arc(400,220,120,0,2 * Math.PI);
+	    ctx.fillStyle = "maroon";
+        ctx.lineWidth = 7;
+	    ctx.fill();
+	    ctx.strokeStyle= "white"; 
+	    ctx.stroke();
+	
+	    //lingkarankedua
+	    ctx.beginPath();
+	    ctx.arc(400,220,80,0,2 * Math.PI);
+	    ctx.fillStyle = "red";
+        ctx.lineWidth = 10;
+	    ctx.fill();
 
-        //lingkaran 1
-        ctx.beginPath();
-        ctx.arc(350, 200, 60, 0, 2 * Math.PI);
-        ctx.fillStyle = "white";
-        ctx.linWidth = 10;
-        ctx.strokeStyle = "blue"; 
-        ctx.fill();
-        ctx.stroke();
+        //segiempat
+	    ctx.beginPath();
+	    ctx.fillStyle = "white";
+	    ctx.fillRect(355,175,90,90);
+	    ctx.fillStyle="red";
+	    ctx.fillRect(360,180,80,80);
+	    ctx.fill();
 
-        //segi empat
-        ctx.beginPath();
-        ctx.rect(305,160,85,85);
-        ctx.fillStyle = "green";
-        ctx.fill();
-
-        //garis
-        //ctx.beginPath();
-        //ctx.moveTo(800,450);
-        //ctx.lineTo(200,300);
-        //ctx.lineTo(200,300);
-        //ctx.lineTo(200,300);
-        //ctx.lineTo(200,300);
-        //ctx.stroke();
+        //segitigakesatu
+	    ctx.beginPath();
+	    ctx.moveTo(55,225);
+	    ctx.lineTo(150,120);
+	    ctx.lineTo(150,330);
+	    ctx.fillStyle = "red";
+	    ctx.fill();
+		
+	    //segitigakedua
+	    ctx.beginPath();
+	    ctx.moveTo(743,225);
+	    ctx.lineTo(650,120);
+	    ctx.lineTo(650,330);
+	    ctx.fillStyle = "red";
+	    ctx.fill();
         
     </script>
     <br>
