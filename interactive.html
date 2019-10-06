@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>garis garis ayew</title>
+        <style type="text/css">
+            canvas{
+                background-color: bisque;
+            }
+
+        </style>
+    </head>
+   <body>
+       <canvas height="500" width="1000" id="canvasheris"></canvas>
+       <script type="text/javascript">
+            var h=document.getElementById('canvasheris');
+            var ctx=h.getContext('2d');
+            
+            document.body.addEventListener('mousedown' ,drawline);
+            function drawline(hrs)
+            {
+                var x=hrs.offsetX;
+                var y=hrs.offsetY;
+                ctx.lineTo(x,y);
+                ctx.lineWidth=2;
+                ctx.strokeStyle='black';
+                ctx.stroke();
+            }
+       </script>
+   </body>
+</html>
